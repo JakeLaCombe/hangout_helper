@@ -12,4 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require libs/modernizr-2.6.2.min
+//= require libs/gumby.min
+//= require main
+//= require plugins
+//= require libs/gumby.init
+//= require libs/ui/gumby.checkbox
+//= require libs/ui/gumby.fittext
+//= require libs/ui/gumby.fixed
+//= require libs/ui/gumby.navbar
+//= require libs/ui/gumby.radiobtn
+//= require libs/ui/gumby.retina
+//= require libs/ui/gumby.skiplink
+//= require libs/ui/gumby.tabs
+//= require libs/ui/gumby.toggleswitch
 //= require_tree .

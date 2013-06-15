@@ -1755,7 +1755,7 @@ body .video.twitch, body .video.youtube.show_controls { padding-top: 30px; }
   .navbar .logo a { padding: 0; }
   .navbar .logo a img { width: auto; height: auto; max-width: 100%; } }
 .navbar ul { display: table; vertical-align: middle; margin: 0; float: none; }
-@media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 0; overflow: hidden; text-align: center; background: #12252f; }
+@media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 40px; overflow: hidden; text-align: center; background: #12252f; }
   .navbar ul.active { height: auto; max-height: 600px; z-index: 999999; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-box-shadow: 0 2px 2px #04080a; -moz-box-shadow: 0 2px 2px #04080a; box-shadow: 0 2px 2px #04080a; } }
 .navbar ul li { display: table-cell; text-align: center; padding-bottom: 0; margin: 0; height: 60px; line-height: 58px; }
 @media only screen and (max-width: 767px) { .navbar ul li { display: block; position: relative; min-height: 50px; max-height: 320px; height: auto; width: 100%; border-right: 0 !important; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; } }
