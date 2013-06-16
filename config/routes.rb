@@ -1,4 +1,39 @@
 HangoutHelper::Application.routes.draw do
+  root to: 'static_pages#index'
+
+  resources :person
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+  get "group/create"
+
+  get "group/new"
+
+  get "group/index"
+
+  get "group/show"
+
+  get "person/create"
+
+  get "person/edit"
+
+  get "person/index"
+
+  get "person/show"
+
+  get "person/destroy"
+
+  get "people/destroy"
+
+  get "people/edit"
+
+  get "people/create"
+
+  get "people/index"
+
+  get "people/show"
+
   get "static_pages/index"
 
   # The priority is based upon order of creation:

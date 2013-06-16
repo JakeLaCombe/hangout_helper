@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="push_two eight columns">
+  <h1>Register</h1>
+<% @person.errors.full_messages.each do |msg| %>
+  <p class="danger alert"><%= msg %></p>
+<% end %>
+<%= form_for @person, url: {:controller => 'person',
+                  :action => 'create'}, do |f|%>
+  <div class="field">
+    <%= f.text_field :first, class:"text input", placeholder: "First" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :last, class:"text input", placeholder: "Last" %>
+  </div>
+  <div class="field">
+    <%= f.email_field :email, class:"text input", placeholder: "Email" %>
+  </div>  
+  <div class="field">
+    <%= f.password_field :password, class:"text input field", placeholder: "Password" %>
+  </div>
+  <div class="field">
+    <%= f.password_field :password_confirmation, class:"text input field", placeholder: "Confirmation" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :zip, class:"text input field", placeholder: "Zip" %>
+  </div>
+  <div class="xlarge medium primary btn pretty">
+    <%= f.submit "Register" %>
+  </div>
+<% end %>
+</div>
+</div>

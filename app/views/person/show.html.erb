@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="two columns">
+  	<div><%= gravatar_for @person, size: 100 %></div>
+  </div>
+  <div class="ten columns person-content">
+  	<div>
+  		<h1><%= @person.first + ' ' + @person.last %></h1>
+  		<p>Email <%= @person.email %></p>
+  		<p>Zip <%= @person.zip %></p>
+  		<div class="btn pretty primary large"><input type="submit" class="input" name="invite" value="Invite to Group"/></div>
+  	</div>
+  </div>
+</div>

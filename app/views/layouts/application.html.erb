@@ -8,6 +8,9 @@
 </head>
 <body>
 <%= render 'shared/header-nav' %>
+<% flash.each do |key,value|%>
+  <div class="row alert <%=key %>"><%=value %></div>
+<% end %>
 <%= yield %>
 
 </body>

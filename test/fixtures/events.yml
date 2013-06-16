@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  street: MyString
+  city: MyString
+  zip: MyString
+  time: 2013-06-15 17:30:17
+
+two:
+  street: MyString
+  city: MyString
+  zip: MyString
+  time: 2013-06-15 17:30:17

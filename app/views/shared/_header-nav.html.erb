@@ -1,25 +1,24 @@
-<nav class="navbar" id="nav1">
+<nav class="navbar pretty" id="nav1">
   <div class="row">
+    <h1 class="logo">
+      <img src="/assets/small-logo.png" />
+    </h1>
   	<nav class="four columns pull_right">
       <ul>
-      	<li>
-      	  <a href="#">Login</a>
-          <form>
-      	    <div class="dropdown">
-              <ul class="login-form">
-                <li class="field">
-                  <input type="email" class="input email" placeholder="Email"/>
-                </li>
-                <li class="field">
-                  <input type="password" class="input password" placeholder="Password"/>
-                </li>
-                <li>
-                  <div class="xlarge medium primary btn pretty"><input type="submit" name="login" class="input" value="Login"/></div>
-                </li>
-              </ul>
+        <% if signed_in? %>
+          <li><%= link_to "Sign out", signout_path, method: "delete" %> </li>
+        <% else %>
+      	  <li>
+      	    <a href="#">Login</a>
+      	      <div class="dropdown">
+                <ul class="login-form">
+                  <li>
+                    <%= render 'shared/signin_form' %>
+                  </li>
+                </ul>
             </div>
-          </form>
-        </li>
+          </li>
+        <% end %>
       </ul>
     </nav>
     <ul>
