@@ -6,7 +6,15 @@
   	<nav class="four columns pull_right">
       <ul>
         <% if signed_in? %>
-          <li><%= link_to "Sign out", signout_path, method: "delete" %> </li>
+          <li>
+            <a href="#">Profile Options</a>
+              <div class="dropdown">
+                <ul class="login-form">
+                  <li><%= link_to "Label", :controller => :person, :action => :index %></li>
+                  <li><%= link_to "Sign Out", signout_path, method: "delete" %>  </li>
+                </ul>
+            </div>
+          </li>
         <% else %>
       	  <li>
       	    <a href="#">Login</a>

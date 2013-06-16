@@ -1,2 +1,47 @@
-<h1>Group#show</h1>
-<p>Find me in app/views/group/show.html.erb</p>
+<div class="row">
+	<h1><%= @group.name %></h1>
+</div>
+<div class="row">
+	<div class="eight columns">
+	  <div class="slideshow">
+	    <img src="/assets/NewTavernOutside.JPG"/>
+	  	<img src="/assets/exterior-of-italian-delight.jpg"/>
+	  	<img src="/assets/night_club_city.JPG"/>
+	  	<img src="/assets/gallaghers-steak-house_v1_800x496.jpg"/>
+	  </div>
+	</div>
+	<div class="four columns">
+	  <h2>Next Hangout</h2>
+	  <hr>
+	  <p>Eskimo Alley</p>
+	  <p>Friday at 8:00</p>
+	</div>
+</div>
+<div class="row group-stats">
+	<div class="four columns">
+	  <h3>Members</h3>
+	  <hr>
+	  <ul>
+	  	<% Person.all(limit: 6).each do |user|%>
+	  	<li style="float:left;"><span style="float:left;margin-right:10px;"><%=gravatar_for user, size: 50 %></span><%= user.first + ' ' + user.last%></li>
+	  	<% end %>
+	  </ul>
+	</div>
+	<div class="four columns">
+	  <h3>Top Places</h3>
+	  <hr>
+	  <ul class="top-places">
+	  	<li>Charlie Hooper's<span><img src="/assets/starred-rating.png"/></span></li>
+	  	<li>Shark Bar<span><img src="/assets/starred-rating.png"/></span></li>
+	  	<li>Dave & Busters<span><img src="/assets/starred-rating.png"/></span></li>
+	  </ul>
+	</div>
+	<div class="four columns">
+	  <h3>Bulleton</h3>
+	  <hr>
+	  <ul>
+	  	<li>Karaoke this Friday?</li>
+	  	<li>It's Saint Patty's Day! Vote up the Parades!</li>
+	  </ul>
+	</div>
+</div>

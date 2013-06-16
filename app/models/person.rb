@@ -15,6 +15,7 @@ class Person < ActiveRecord::Base
   validates :password_confirmation, presence: true
 
   belongs_to :group
+  has_one :owned_group, class_name:"Group", foreign_key: "owner_id"
   
   def encrypt_password
     if password.present?

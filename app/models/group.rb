@@ -1,6 +1,8 @@
 class Group < ActiveRecord::Base
-  attr_accessible :name, :zip
-  has_many :persons
+  attr_accessible :name, :zip, :owner_id
+  has_many :people
   has_many :events
-  has_one :group_owner, through: persons
+
+  validates :name, presence: true
+  validates :zip, presence: true
 end

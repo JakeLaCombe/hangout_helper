@@ -3,9 +3,13 @@ HangoutHelper::Application.routes.draw do
 
   resources :person
   resources :sessions, only: [:new, :create, :destroy]
+  resources :group
+
+  match '/new_group', to: "group#new"
 
   match '/signin', to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
+  
   get "group/create"
 
   get "group/new"
@@ -13,6 +17,14 @@ HangoutHelper::Application.routes.draw do
   get "group/index"
 
   get "group/show"
+
+  get "groups/create"
+
+  get "groups/new"
+
+  get "groups/index"
+
+  get "groups/show"
 
   get "person/create"
 

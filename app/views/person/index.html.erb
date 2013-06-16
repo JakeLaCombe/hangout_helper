@@ -1,2 +1,17 @@
-<h1>Person#index</h1>
-<p>Find me in app/views/person/index.html.erb</p>
+<div class="row">
+  <%= will_paginate(@persons) %>
+</div>
+<% @persons.each do |user| %>
+  <div class="row">
+    <div class="one columns">
+    	<%= gravatar_for user, size: 50 %>
+    </div>
+    <div class="eleven columns">
+    	<p><%= link_to user.first + " " + user.last, user%></p>
+    </div>
+    <hr>
+  </div>
+<% end %>
+<div class="row">
+  <%= will_paginate(@persons) %>
+</div>

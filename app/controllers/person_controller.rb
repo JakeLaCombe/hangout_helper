@@ -32,6 +32,7 @@ class PersonController < ApplicationController
   end
 
   def index
+    @persons = Person.paginate(:page => params[:page])
   end
 
   def show

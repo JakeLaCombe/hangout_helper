@@ -4,6 +4,7 @@
   <title>HangoutHelper</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -12,6 +13,10 @@
   <div class="row alert <%=key %>"><%=value %></div>
 <% end %>
 <%= yield %>
-
+  <footer class="row">
+  	<hr>
+	<p>2013 Jake LaCombe</p>
+  </footer>
+</div>
 </body>
 </html>
