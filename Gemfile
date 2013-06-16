@@ -5,7 +5,10 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
+
 gem "factory_girl_rails", "~> 4.0"
 gem 'faker', '1.0.1'
 gem 'will_paginate', '~> 3.0'
@@ -28,7 +31,7 @@ gem 'jquery-rails', '~> 2.0.1'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :production do
-  gem "rmagick", "2.12.0", :require => 'RMagick'
+	gem 'pg', '0.12.2'
 end
 
 gem 'paperclip','~> 3.0'
