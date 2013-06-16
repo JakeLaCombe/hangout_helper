@@ -5,6 +5,10 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+group :development do
+  gem 'sqlite3'
+end
+
 gem "factory_girl_rails", "~> 4.0"
 gem 'faker', '1.0.1'
 gem 'will_paginate', '~> 3.0'
@@ -30,6 +34,7 @@ group :production do
 	gem 'pg', '0.12.2'
 end
 
+gem 'paperclip','~> 3.0'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # To use Jbuilder templates for JSON
