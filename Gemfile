@@ -31,10 +31,9 @@ gem 'jquery-rails', '~> 2.0.1'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :production do
-  gem 'pg', '0.12.2'
+	gem 'pg', '0.12.2'
 end
 
-gem 'paperclip','~> 3.0'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # To use Jbuilder templates for JSON
