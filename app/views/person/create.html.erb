@@ -5,7 +5,7 @@
   <p class="danger alert"><%= msg %></p>
 <% end %>
 <%= form_for @person, url: {:controller => 'person',
-                  :action => 'create'}, do |f|%>
+                  :action => 'create'} do |f|%>
   <div class="field">
     <%= f.text_field :first, class:"text input", placeholder: "First" %>
   </div>
