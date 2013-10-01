@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-cycle
 //= require libs/modernizr-2.6.2.min
 //= require libs/gumby.min
 //= require main
